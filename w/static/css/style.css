@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+  font-size:medium;
+  background: hsl(54, 42%, 95%)
+  
+}
+
+.page-content img {
+  max-width: 100%;
+  height: auto!important;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 1.5em !important;
+  display: block;
+  border-radius: 90px;
+  
+  
+}
+
+a.article,
+a.article:hover {
+  background: #C6982F !important;
+  color: #fff !important;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width);
+  top: var(--topNavbarHeight);
+  
+
+ 
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+ 
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+
+}
+
+main{
+  background: hsl(54, 42%, 95%)
+}
+.offcanvas{
+  background: #720A00;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+    background: hsl(54, 42%, 95%)
+    
+  }
+  /* this is to remove the backdrop */
+ 
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+    
+  }
+ 
+  
+  .offcanvas{
+    background: #720A00;
+
+
+
+
+
+      /*--------------color-------------------*/
+
+  }
+
+  
+
+  
+}
